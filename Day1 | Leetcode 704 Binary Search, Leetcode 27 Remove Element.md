@@ -4,10 +4,19 @@
 
 **Thoughts:** 
 
- - If we set r = len(nums) - 1, then we need to use l<=r in the while loop
-        l,r = 0, len(nums) -1
-        while l <= r:
+ - If we set r = len(nums) - 1, then we need to use l<=r in the while loop: (both end inclusive)
 
-**Time Complexity:**
+```
+    l,r = 0, len(nums) -1
+    
+    while l <= r:    
+```  
+```
+    mid = r - 1
+    mid = l + 1
+```
+       
 
-**Spcae Complexity:**
+**Time Complexity:**  O(logN)
+
+**Spcae Complexity:**  O(1)
