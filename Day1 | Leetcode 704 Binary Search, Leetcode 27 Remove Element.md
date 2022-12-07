@@ -1,4 +1,4 @@
-## 704 Binary Search
+## 704. Binary Search
 
 **Link:** [704 Binary Search](https://leetcode.com/problems/binary-search/)
 
@@ -18,5 +18,32 @@
        
 
 **Time Complexity:**  O(logN)
+
+**Spcae Complexity:**  O(1)
+
+
+## 27. Remove Element
+
+**Link:** [27. Remove Element](https://leetcode.com/problems/remove-element/)
+
+**Thoughts:** 
+
+ - Two Pointers: `slow`  and `fast` pointer on index 0
+ - if `fast` meets the removed element, then we directly jump to the next element
+ - if `fast` does not meet the removed element, then we assign `fast` val to `slow`, move `slow` to next element
+ - `slow` will be the number of element after reomving the target element
+
+```
+    s,f = 0,0
+```
+```
+    if nums[f] != val:
+        nums[s] = nums[f]
+        s += 1
+    f += 1
+```  
+       
+
+**Time Complexity:**  O(N)
 
 **Spcae Complexity:**  O(1)
