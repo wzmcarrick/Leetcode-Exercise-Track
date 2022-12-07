@@ -4,9 +4,9 @@
 
 **Thoughts:** 
 
-If we set r = len(nums) - 1, then we need to use l<=r in the while loop
-> l,r = 0, len(nums) -1
-> while l <= r:
+ - If we set r = len(nums) - 1, then we need to use l<=r in the while loop
+  > l,r = 0, len(nums) -1
+  > while l <= r:
 
 **Time Complexity:**
 
